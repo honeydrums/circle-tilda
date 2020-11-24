@@ -76,6 +76,12 @@ ol li::before {
     line-height: 1
 }
 
+@media(min-width:1020px) {
+    ol li::before {
+        border-right: 1px solid lightgray;
+    }
+}
+
 @media(max-width:1020px) {
     .title {
         font-size: 3rem;
@@ -90,9 +96,6 @@ ol li::before {
         flex-wrap: wrap;
         align-items: center;
         margin: 0 0 40px 0
-    }
-    ol li:active {
-        transform: translateX(10px)
     }
     ol li h2 {
         margin: 0 10px 20px 0;
